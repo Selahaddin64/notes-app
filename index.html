@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+</head>
+
+<body>
+  <div class="notes" id="app">
+    <div class="notes-sidebar">
+      <button class="notes-add" type="button">Add Note</button>
+      <div class="notes-list">
+        <div class="notes-list-item notes-list-item--selected">
+          <div class="notes-small-title">Lecture Notes</div>
+          <div class="notes-small-body">I learnt nothing today.</div>
+          <div class="notes-small-updated">Thursday 3:30pm</div>
+          <div class="flex-delete-icon"><i class="fas fa-trash"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="notes-preview">
+      <input class="notes-title" type="text" placeholder="Note Title ">
+      <textarea class="notes-body">I am the notes body...</textarea>
+    </div>
+  </div>
+  <script src="./app.js" type="module"></script>
+</body>
+
+</html>
